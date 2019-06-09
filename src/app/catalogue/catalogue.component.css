@@ -1,0 +1,14 @@
+.example-card {
+    max-width: 300px;
+    max-height: 500px;
+  }
+  
+  .example-header-image {
+    background-image: url('../../assets/bfgnd.jpg');
+    background-size: cover;
+  }
+
+  mat-card {
+    width: calc(100% - 70px);
+    height: calc(100% - 70px);
+  }  

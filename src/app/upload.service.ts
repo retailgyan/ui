@@ -60,6 +60,7 @@ export class UploadService {
 
   public update(apparel:Apparel){
     this.apparel = this.apparel.concat(apparel);
+    console.log(this.apparel);
   }
   
 }

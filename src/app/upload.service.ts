@@ -7,7 +7,7 @@ import { Apparel } from './apparel';
   providedIn: 'root'
 })
 export class UploadService {
-  SERVER_URL: string = "http://localhost:8080";
+  SERVER_URL: string = "http://retailgyan.eastus.cloudapp.azure.com:8080";
 
   constructor(private httpClient: HttpClient) { } 
   apparel:Apparel[] 

@@ -1,0 +1,14 @@
+[
+    {
+      "imgsrc": "/home/azure/assets/img_00000055.jpg",
+      "category":"Pants"
+    },
+    {
+      "imgsrc": "/home/azure/assets/img_00000020.jpg" ,
+      "category":"Top"
+    },
+    {
+      "imgsrc": "/home/azure/assets/img_00000019.jpg" ,
+      "category":"Shirt"
+    }
+  ]

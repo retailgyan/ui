@@ -39,23 +39,11 @@ export class UploadComponent implements OnInit {
   onSubmit(event){
     const formData = new FormData();
     formData.append('file', this.form.get('fileimage').value);
-    let apparel =  {
-        "name": "new",
-        "imgsrc": "assets/img_00000019.jpg" ,
-        "category":"Shirt",
-        "caption":"Maroon solid woven top with crochet detail, has a boat neck, three-quarter bell sleeves"
-      
-    }
-
-    this.apparel = this.apparel.concat(apparel);
-    console.log(this.apparel)
-    //this.uploadService.update(apparel);
-    //this.onNewEntryAdded.emit(true);
-
-    // this.uploadService.upload(formData, this.userId).subscribe(
-    //   (res) => this.uploadResponse = res,
-    //   (err) => this.error = err
-    // );
-
+    let filename = this.form.get('fileimage').value.name;
+    console.log(filename);
+    this.uploadService.upload(formData, filename).subscribe(
+       (res) => this.uploadResponse = res,
+       (err) => this.error = err
+     );
   }
 }

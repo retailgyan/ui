@@ -10,10 +10,14 @@ import { UploadService } from '../upload.service';
 export class CatalogueComponent implements OnInit {
 
   apparel:Apparel[]
+  error: string;
+
   constructor(private uploadService: UploadService) { }
 
   ngOnInit() {
-    this.apparel = this.uploadService.loaddata();
+    this.uploadService.loaddata().subscribe(
+      (res) => this.apparel = res,
+      (err) => this.error = err
+    );
   }
-
 }

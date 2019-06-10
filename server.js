@@ -1,5 +1,5 @@
-const DATAPATH = "D:/Workspace/offline/data.json";
-const UPLOADPATH = "D:/Workspace/offline/retailgyan/src/assets";
+const DATAPATH = "/home/azure/data.json";
+const UPLOADPATH = "/home/azure/retailgyan/src/assets";
 const MODELSERVICE = "http://localhost:5000/retailGyan/api/v1.0/predict";
 
 var express = require('express');
